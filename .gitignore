@@ -21,3 +21,7 @@ VizRDDL/
 # Competition/
 TestingDomain/
 
+
+build/
+dist/
+pyRDDLGym.egg-info/

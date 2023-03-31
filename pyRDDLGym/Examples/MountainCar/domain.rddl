@@ -73,7 +73,7 @@ domain mountain_car {
     };
 
         // R = 100 only when the cart reaches the goal and the velocity is higher than the desired velocity
-	reward = if((pos' >= GOAL-MIN) ^ (vel' >= VEL-MIN))
+	reward = if((pos >= GOAL-MIN) ^ (vel >= VEL-MIN))
 		then 100.0 - (ACTION_PENALTY_CONST * pow[action,2])
 		else 0.0 - (ACTION_PENALTY_CONST * pow[action,2]);
 		
